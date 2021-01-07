@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
-import Main from './components/MainComponent';
+import React from 'react';
+
+import Body from './components/Body';
+import Footer from './components/Footer';
+import Header from './components/Header';
 import './App.css';
 
-class App extends Component {
+const App = () => (
+  <div className="view">
+    <Header />
 
-  render() {
-    return (
-      <div>
-        <Main />
-      </div>
-    );
-  }
-}
+    <Body />
+
+    <Footer />
+  </div>
+);
 
 export default App;
